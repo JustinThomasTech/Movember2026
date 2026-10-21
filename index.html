@@ -35,6 +35,21 @@
       pointer-events: auto;
     }
 
+    /* Pop-up blue banner styling for Contest Rules 1-3 */
+    .rule-popup {
+      visibility: hidden;
+      opacity: 0;
+      transform: translateY(8px) scale(0.97);
+      transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+      pointer-events: none;
+    }
+    .rule-card:hover .rule-popup {
+      visibility: visible;
+      opacity: 1;
+      transform: translateY(0) scale(1);
+      pointer-events: auto;
+    }
+
     /* Pop-up blue banner styling for Award Categories */
     .award-banner-popup {
       visibility: hidden;
@@ -138,24 +153,70 @@
     <section id="view-contest" class="hidden space-y-8">
       <div class="border-b border-brand-border pb-6">
         <h1 class="text-3xl font-extrabold tracking-tight text-white">The Great Office Mo-Grow Contest</h1>
-        <p class="mt-2 text-neutral-400 text-sm">Official divisions and criteria. Hover your mouse over any category to view the illustrated banner.</p>
+        <p class="mt-2 text-neutral-400 text-sm">Official divisions and criteria. Hover your mouse over any rule or award category to view the official guidelines.</p>
       </div>
 
+      <!-- RULES 1-3 WITH HOVER HIGHLIGHT & WITTY POPUP -->
       <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-        <div class="bg-brand-card border border-brand-border p-5 rounded-lg">
-          <h3 class="text-sm font-bold text-white mb-1">1. Clean Shave Baseline</h3>
-          <p class="text-xs text-neutral-400">All registered Mo-Bros must begin with a clean-shaven selfie on November 1.</p>
+        <!-- Rule 1 -->
+        <div class="rule-card group relative bg-brand-card border border-brand-border hover:border-sky-500 p-5 rounded-lg transition duration-200 cursor-pointer shadow-md">
+          <div class="flex items-center justify-between mb-2">
+            <span class="text-[10px] font-mono text-neutral-500 uppercase tracking-wider">Rule 01</span>
+            <span class="text-[11px] text-sky-400 font-semibold group-hover:translate-x-0.5 transition">The Real Talk &rarr;</span>
+          </div>
+          <h3 class="text-sm font-bold text-white mb-1 group-hover:text-sky-400 transition">1. Clean Shave Baseline</h3>
+          <p class="text-xs text-neutral-400 leading-relaxed">All registered Mo-Bros must begin with a clean-shaven selfie on November 1.</p>
+
+          <!-- Witty Pop-up -->
+          <div class="rule-popup absolute left-0 right-0 -top-3 -translate-y-full bg-sky-600 border border-sky-400 rounded-xl p-4 shadow-2xl z-30 text-white">
+            <span class="inline-block bg-sky-800 text-sky-200 text-[10px] font-mono font-bold px-2 py-0.5 rounded uppercase tracking-wider mb-1.5">Unfiltered Rule #1</span>
+            <h4 class="text-sm font-extrabold text-white mb-1">The Babyface Protocol</h4>
+            <p class="text-[11px] text-sky-100 leading-relaxed">
+              No sneaky 3-day head starts allowed! On November 1st, your face must be as bare as a fresh sheet of paper. We need photographic evidence that you started from ground zero. Bid a temporary farewell to your emotional support stubble—it’s time to face the breeze.
+            </p>
+          </div>
         </div>
-        <div class="bg-brand-card border border-brand-border p-5 rounded-lg">
-          <h3 class="text-sm font-bold text-white mb-1">2. The Moustache Only</h3>
-          <p class="text-xs text-neutral-400">No goatees or full beards. Only authentic upper-lip growth is evaluated.</p>
+
+        <!-- Rule 2 -->
+        <div class="rule-card group relative bg-brand-card border border-brand-border hover:border-sky-500 p-5 rounded-lg transition duration-200 cursor-pointer shadow-md">
+          <div class="flex items-center justify-between mb-2">
+            <span class="text-[10px] font-mono text-neutral-500 uppercase tracking-wider">Rule 02</span>
+            <span class="text-[11px] text-sky-400 font-semibold group-hover:translate-x-0.5 transition">The Real Talk &rarr;</span>
+          </div>
+          <h3 class="text-sm font-bold text-white mb-1 group-hover:text-sky-400 transition">2. The Moustache Only</h3>
+          <p class="text-xs text-neutral-400 leading-relaxed">No goatees or full beards. Only authentic upper-lip growth is evaluated.</p>
+
+          <!-- Witty Pop-up -->
+          <div class="rule-popup absolute left-0 right-0 -top-3 -translate-y-full bg-sky-600 border border-sky-400 rounded-xl p-4 shadow-2xl z-30 text-white">
+            <span class="inline-block bg-sky-800 text-sky-200 text-[10px] font-mono font-bold px-2 py-0.5 rounded uppercase tracking-wider mb-1.5">Unfiltered Rule #2</span>
+            <h4 class="text-sm font-extrabold text-white mb-1">Lip Island Only</h4>
+            <p class="text-[11px] text-sky-100 leading-relaxed">
+              This is a strictly solo expedition for your upper lip. That means no defensive goatees, no chinstraps, and no masquerading a five o'clock shadow as "texture." If the whiskers aren't confined strictly to the space between your nose and lip, you will be disqualified by popular outrage.
+            </p>
+          </div>
         </div>
-        <div class="bg-brand-card border border-brand-border p-5 rounded-lg">
-          <h3 class="text-sm font-bold text-white mb-1">3. Company-Wide Vote</h3>
-          <p class="text-xs text-neutral-400">Prizes awarded at month-end based on growth, creativity, and participation.</p>
+
+        <!-- Rule 3 -->
+        <div class="rule-card group relative bg-brand-card border border-brand-border hover:border-sky-500 p-5 rounded-lg transition duration-200 cursor-pointer shadow-md">
+          <div class="flex items-center justify-between mb-2">
+            <span class="text-[10px] font-mono text-neutral-500 uppercase tracking-wider">Rule 03</span>
+            <span class="text-[11px] text-sky-400 font-semibold group-hover:translate-x-0.5 transition">The Real Talk &rarr;</span>
+          </div>
+          <h3 class="text-sm font-bold text-white mb-1 group-hover:text-sky-400 transition">3. Company-Wide Vote</h3>
+          <p class="text-xs text-neutral-400 leading-relaxed">Prizes awarded at month-end based on growth, creativity, and participation.</p>
+
+          <!-- Witty Pop-up -->
+          <div class="rule-popup absolute left-0 right-0 -top-3 -translate-y-full bg-sky-600 border border-sky-400 rounded-xl p-4 shadow-2xl z-30 text-white">
+            <span class="inline-block bg-sky-800 text-sky-200 text-[10px] font-mono font-bold px-2 py-0.5 rounded uppercase tracking-wider mb-1.5">Unfiltered Rule #3</span>
+            <h4 class="text-sm font-extrabold text-white mb-1">Democracy, Banter & Bribery</h4>
+            <p class="text-[11px] text-sky-100 leading-relaxed">
+              Forget scientific calipers—this is an office popularity contest where pure charisma beats genetics every time. Flaunt your lip foliage on every Teams call, lobby ruthlessly in the kitchen, and remember: subtly trading barista coffee for final votes is practically an office tradition.
+            </p>
+          </div>
         </div>
       </div>
 
+      <!-- AWARD CATEGORIES -->
       <div>
         <h2 class="text-lg font-bold text-white mb-4">Official Award Categories</h2>
         <p class="text-xs text-neutral-400 mb-6">Hover over any division below to view the official category badge and details.</p>
@@ -366,7 +427,6 @@
 
     const DEFAULT_REACTIONS = ['🔥', '🧔', '👏', '💪', '😂'];
 
-    // Load saved posts from browser storage; starts completely clean with 0 mock data
     let feedPosts = JSON.parse(localStorage.getItem('smollan_movember_posts') || '[]');
     let userProfiles = JSON.parse(localStorage.getItem('smollan_movember_profiles') || '{}');
     let currentUser = null;
