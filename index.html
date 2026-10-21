@@ -12,7 +12,8 @@
           colors: {
             brand: {
               charcoal: '#1A1A1A', dark: '#111111', card: '#1F1F1F',
-              border: '#2E2E2E', accent: '#333333', muted: '#888888', light: '#F5F5F7'
+              border: '#2E2E2E', accent: '#333333', muted: '#888888', light: '#F5F5F7',
+              smollanBlue: '#0284c7'
             }
           }
         }
@@ -37,7 +38,7 @@
 </head>
 <body class="bg-brand-dark text-neutral-100 min-h-screen flex flex-col font-sans selection:bg-neutral-700 selection:text-white">
 
-  <!-- Main Header -->
+  <!-- Header -->
   <header class="bg-white border-b border-neutral-300 sticky top-0 z-50 shadow-sm">
     <div class="max-w-6xl mx-auto px-4 py-3 flex flex-wrap items-center justify-between gap-4">
       <div class="flex items-center space-x-3">
@@ -58,7 +59,7 @@
     </div>
   </header>
 
-  <!-- Navigation Bar -->
+  <!-- Navigation -->
   <nav class="bg-brand-charcoal border-b border-brand-border sticky top-[57px] z-40">
     <div class="max-w-6xl mx-auto px-4 flex overflow-x-auto space-x-2 py-2.5">
       <button onclick="switchTab('why')" id="tab-why" class="tab-btn px-4 py-1.5 rounded-md text-xs font-semibold uppercase tracking-wider text-white bg-neutral-800 transition">The Why</button>
@@ -77,39 +78,45 @@
       </div>
 
       <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-        <div class="has-tooltip relative bg-brand-card border border-brand-border rounded-xl p-6 hover:border-neutral-500 transition duration-200">
-          <div class="flex items-center justify-between mb-4"><span class="text-xs font-bold uppercase tracking-wider text-neutral-400">Pillar 01</span></div>
+        <!-- Pillar 01 -->
+        <div class="has-tooltip relative bg-brand-card border border-brand-border rounded-xl p-6 hover:border-sky-500 transition duration-200">
+          <div class="flex items-center justify-between mb-4"><span class="text-xs font-bold uppercase tracking-wider text-sky-400">Pillar 01</span></div>
           <h2 class="text-lg font-bold text-white mb-2">Mental Health & Suicide Prevention</h2>
           <p class="text-xs text-neutral-400 leading-relaxed mb-4">Globally, one man is lost to suicide every minute. We are championing workplace openness.</p>
-          <div class="text-[11px] font-semibold text-neutral-300 underline underline-offset-4">Hover for details & link</div>
-          <div class="tooltip-content absolute left-0 right-0 -top-3 translate-y-[-100%] bg-neutral-900 border border-neutral-700 rounded-lg p-4 shadow-2xl z-30">
+          <div class="text-[11px] font-semibold text-sky-400 underline underline-offset-4">Hover for details & link</div>
+          <!-- Tooltip styled with Smollan brand blue -->
+          <div class="tooltip-content absolute left-0 right-0 -top-3 translate-y-[-100%] bg-sky-600 border border-sky-400 rounded-xl p-4 shadow-2xl z-30 text-white">
             <h3 class="text-xs font-bold text-white mb-1">Movember Focus: Mental Fitness</h3>
-            <p class="text-[11px] text-neutral-300 mb-3">Learn to spot red flags in yourself and colleagues.</p>
-            <a href="https://movember.com/mens-health/mental-health" target="_blank" class="inline-flex items-center text-[11px] font-semibold text-white bg-neutral-800 hover:bg-neutral-700 px-3 py-1.5 rounded transition">Read Movember Article &rarr;</a>
+            <p class="text-[11px] text-sky-100 mb-3">Learn to spot red flags in yourself and colleagues.</p>
+            <a href="https://movember.com/mens-health/mental-health" target="_blank" class="inline-flex items-center text-[11px] font-bold text-sky-950 bg-white hover:bg-neutral-100 px-3 py-1.5 rounded transition shadow">Read Movember Article &rarr;</a>
           </div>
         </div>
 
-        <div class="has-tooltip relative bg-brand-card border border-brand-border rounded-xl p-6 hover:border-neutral-500 transition duration-200">
-          <div class="flex items-center justify-between mb-4"><span class="text-xs font-bold uppercase tracking-wider text-neutral-400">Pillar 02</span></div>
+        <!-- Pillar 02 -->
+        <div class="has-tooltip relative bg-brand-card border border-brand-border rounded-xl p-6 hover:border-sky-500 transition duration-200">
+          <div class="flex items-center justify-between mb-4"><span class="text-xs font-bold uppercase tracking-wider text-sky-400">Pillar 02</span></div>
           <h2 class="text-lg font-bold text-white mb-2">Prostate Cancer Awareness</h2>
           <p class="text-xs text-neutral-400 leading-relaxed mb-4">The most commonly diagnosed cancer in men. Routine screening boosts survival rates.</p>
-          <div class="text-[11px] font-semibold text-neutral-300 underline underline-offset-4">Hover for details & link</div>
-          <div class="tooltip-content absolute left-0 right-0 -top-3 translate-y-[-100%] bg-neutral-900 border border-neutral-700 rounded-lg p-4 shadow-2xl z-30">
+          <div class="text-[11px] font-semibold text-sky-400 underline underline-offset-4">Hover for details & link</div>
+          <!-- Tooltip styled with Smollan brand blue -->
+          <div class="tooltip-content absolute left-0 right-0 -top-3 translate-y-[-100%] bg-sky-600 border border-sky-400 rounded-xl p-4 shadow-2xl z-30 text-white">
             <h3 class="text-xs font-bold text-white mb-1">Testing & Risk Milestones</h3>
-            <p class="text-[11px] text-neutral-300 mb-3">Routine PSA checks are straightforward.</p>
-            <a href="https://movember.com/mens-health/prostate-cancer" target="_blank" class="inline-flex items-center text-[11px] font-semibold text-white bg-neutral-800 hover:bg-neutral-700 px-3 py-1.5 rounded transition">Read Movember Article &rarr;</a>
+            <p class="text-[11px] text-sky-100 mb-3">Routine PSA checks are straightforward.</p>
+            <a href="https://movember.com/mens-health/prostate-cancer" target="_blank" class="inline-flex items-center text-[11px] font-bold text-sky-950 bg-white hover:bg-neutral-100 px-3 py-1.5 rounded transition shadow">Read Movember Article &rarr;</a>
           </div>
         </div>
 
-        <div class="has-tooltip relative bg-brand-card border border-brand-border rounded-xl p-6 hover:border-neutral-500 transition duration-200">
-          <div class="flex items-center justify-between mb-4"><span class="text-xs font-bold uppercase tracking-wider text-neutral-400">Pillar 03</span></div>
+        <!-- Pillar 03 -->
+        <div class="has-tooltip relative bg-brand-card border border-brand-border rounded-xl p-6 hover:border-sky-500 transition duration-200">
+          <div class="flex items-center justify-between mb-4"><span class="text-xs font-bold uppercase tracking-wider text-sky-400">Pillar 03</span></div>
           <h2 class="text-lg font-bold text-white mb-2">Testicular Cancer Checks</h2>
           <p class="text-xs text-neutral-400 leading-relaxed mb-4">A quick 60-second self-exam once a month is the single most effective preventative habit.</p>
-          <div class="text-[11px] font-semibold text-neutral-300 underline underline-offset-4">Hover for details & link</div>
-          <div class="tooltip-content absolute left-0 right-0 -top-3 translate-y-[-100%] bg-neutral-900 border border-neutral-700 rounded-lg p-4 shadow-2xl z-30">
+          <div class="text-[11px] font-semibold text-sky-400 underline underline-offset-4">Hover for details & link</div>
+          <!-- Tooltip styled with Smollan brand blue -->
+          <div class="tooltip-content absolute left-0 right-0 -top-3 translate-y-[-100%] bg-sky-600 border border-sky-400 rounded-xl p-4 shadow-2xl z-30 text-white">
             <h3 class="text-xs font-bold text-white mb-1">Self-Examination Guide</h3>
-            <p class="text-[11px] text-neutral-300 mb-3">A regular check post-shower helps catch irregularities early.</p>
-            <a href="https://movember.com/mens-health/testicular-cancer" target="_blank" class="inline-flex items-center text-[11px] font-semibold text-white bg-neutral-800 hover:bg-neutral-700 px-3 py-1.5 rounded transition">Read Movember Article &rarr;</a>
+            <p class="text-[11px] text-sky-100 mb-3">A regular check post-shower helps catch irregularities early.</p>
+            <a href="https://movember.com/mens-health/testicular-cancer" target="_blank" class="inline-flex items-center text-[11px] font-bold text-sky-950 bg-white hover:bg-neutral-100 px-3 py-1.5 rounded transition shadow">Read Movember Article &rarr;</a>
           </div>
         </div>
       </div>
@@ -182,7 +189,10 @@
     <!-- TAB 3: GALLERY -->
     <section id="view-gallery" class="hidden space-y-8">
       <div class="border-b border-brand-border pb-6 flex items-center justify-between">
-        <h1 class="text-3xl font-extrabold tracking-tight text-white">Mo-Bros Progress Feed</h1>
+        <div>
+          <h1 class="text-3xl font-extrabold tracking-tight text-white">Mo-Bros Progress Feed</h1>
+          <p class="text-xs text-neutral-400 mt-1">Upvote, add emoji reactions, and leave comments to cheer on your colleagues!</p>
+        </div>
       </div>
       <div id="gallery-container" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6"></div>
     </section>
@@ -193,7 +203,6 @@
         <h1 class="text-3xl font-extrabold tracking-tight text-white">Participant Dashboard</h1>
       </div>
       <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
-        <!-- Profile info -->
         <div class="bg-brand-card border border-brand-border p-6 rounded-xl space-y-4">
           <h2 class="text-base font-bold text-white border-b border-brand-border pb-3">My Profile</h2>
           <div>
@@ -207,7 +216,6 @@
           <button onclick="saveUserProfile()" class="w-full bg-neutral-800 hover:bg-neutral-700 text-white font-semibold text-xs py-2.5 rounded transition">Save Profile Info</button>
         </div>
 
-        <!-- Submit new post -->
         <div class="lg:col-span-2 bg-brand-card border border-brand-border p-6 rounded-xl space-y-4">
           <h2 class="text-base font-bold text-white border-b border-brand-border pb-3">Submit Weekly Photo</h2>
           <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
@@ -225,7 +233,7 @@
         </div>
       </div>
 
-      <!-- Manage user's existing uploads -->
+      <!-- Manage user's active uploads -->
       <div class="bg-brand-card border border-brand-border p-6 rounded-xl space-y-4">
         <div class="border-b border-brand-border pb-3 flex items-center justify-between">
           <h2 class="text-base font-bold text-white">My Active Uploads</h2>
@@ -252,7 +260,6 @@
     </div>
   </div>
 
-  <!-- Toast Notification -->
   <div id="toast" class="fixed bottom-6 right-6 bg-neutral-900 border border-neutral-700 text-white text-xs px-4 py-3 rounded-lg shadow-2xl transform translate-y-16 opacity-0 transition-all duration-300 z-50"></div>
 
   <script>
@@ -267,7 +274,8 @@
       'bro15@smollan.tech': 'MoGrow2026_15!'
     };
 
-    // Load saved posts from localStorage; starts completely empty with NO mock profiles
+    const DEFAULT_REACTIONS = ['🔥', '🧔', '👏', '💪', '😂'];
+
     let feedPosts = JSON.parse(localStorage.getItem('smollan_movember_posts') || '[]');
     let userProfiles = JSON.parse(localStorage.getItem('smollan_movember_profiles') || '{}');
     let currentUser = null;
@@ -317,7 +325,6 @@
         
         document.getElementById('tab-profile').classList.remove('hidden');
         
-        // Populate existing user profile if saved
         if (userProfiles[email]) {
           document.getElementById('prof-name').value = userProfiles[email].name || '';
           document.getElementById('prof-role').value = userProfiles[email].role || '';
@@ -351,7 +358,6 @@
       showToast('Profile info saved.');
     }
 
-    // Helper to compress image so it never exceeds browser storage limits
     function compressImage(file, callback) {
       const reader = new FileReader();
       reader.onload = function(e) {
@@ -409,7 +415,9 @@
           week: week, 
           caption: caption || 'Steady growth.', 
           image: compressedBase64, 
-          votes: 0
+          votes: 0,
+          reactions: { '🔥': 0, '🧔': 0, '👏': 0, '💪': 0, '😂': 0 },
+          comments: []
         });
 
         savePostsToStorage();
@@ -422,7 +430,6 @@
       });
     }
 
-    // Trigger photo replacement
     function triggerReplaceImage(postId) {
       postToReplaceImageId = postId;
       document.getElementById('replace-image-input').click();
@@ -446,7 +453,6 @@
       });
     }
 
-    // Delete post / photo
     function deletePost(postId) {
       if (!confirm('Are you sure you want to remove this photo update?')) return;
       feedPosts = feedPosts.filter(p => p.id !== postId);
@@ -459,11 +465,51 @@
     function votePost(postId) {
       const post = feedPosts.find(p => p.id === postId);
       if (post) { 
-        post.votes += 1; 
+        post.votes = (post.votes || 0) + 1; 
         savePostsToStorage();
         renderGallery(); 
-        showToast('Vote recorded!'); 
+        showToast('Upvote recorded!'); 
       }
+    }
+
+    // Emoji reaction handler
+    function addReaction(postId, emoji) {
+      const post = feedPosts.find(p => p.id === postId);
+      if (!post) return;
+      if (!post.reactions) post.reactions = {};
+      post.reactions[emoji] = (post.reactions[emoji] || 0) + 1;
+      savePostsToStorage();
+      renderGallery();
+      showToast(`Reacted with ${emoji}`);
+    }
+
+    // Comment handler
+    function addComment(postId) {
+      const input = document.getElementById(`comment-input-${postId}`);
+      if (!input) return;
+      const text = input.value.trim();
+      if (!text) return;
+
+      const post = feedPosts.find(p => p.id === postId);
+      if (!post) return;
+      if (!post.comments) post.comments = [];
+
+      let authorName = 'Colleague';
+      if (currentUser) {
+        authorName = (userProfiles[currentUser] && userProfiles[currentUser].name) || currentUser.split('@')[0];
+      }
+
+      post.comments.push({
+        id: 'c_' + Date.now(),
+        author: authorName,
+        text: text,
+        time: new Date().toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' })
+      });
+
+      savePostsToStorage();
+      input.value = '';
+      renderGallery();
+      showToast('Comment added!');
     }
 
     function renderGallery() {
@@ -485,8 +531,12 @@
 
       container.innerHTML = feedPosts.map(post => {
         const isOwner = currentUser && (post.author === currentUser);
+        const reactions = post.reactions || { '🔥': 0, '🧔': 0, '👏': 0, '💪': 0, '😂': 0 };
+        const comments = post.comments || [];
+
         return `
-          <div class="bg-brand-card border border-brand-border rounded-xl overflow-hidden flex flex-col">
+          <div class="bg-brand-card border border-brand-border rounded-xl overflow-hidden flex flex-col shadow-lg">
+            <!-- Image Header -->
             <div class="h-64 bg-neutral-950 overflow-hidden relative">
               <img src="${post.image}" alt="${post.name}" class="w-full h-full object-cover" />
               <div class="absolute top-3 left-3 bg-neutral-900/90 backdrop-blur px-2.5 py-1 rounded text-[11px] font-mono text-neutral-300 border border-neutral-700">
@@ -503,6 +553,8 @@
                 </div>
               ` : ''}
             </div>
+
+            <!-- Body Details -->
             <div class="p-5 flex-grow flex flex-col justify-between space-y-4">
               <div>
                 <div class="flex items-center justify-between">
@@ -510,11 +562,58 @@
                   ${isOwner ? `<span class="text-[10px] text-emerald-400 font-mono bg-emerald-950/80 border border-emerald-800 px-1.5 py-0.5 rounded">You</span>` : ''}
                 </div>
                 <p class="text-xs text-neutral-400">${post.role}</p>
-                <p class="text-xs text-neutral-300 mt-3 leading-relaxed">"${post.caption}"</p>
+                <p class="text-xs text-neutral-300 mt-2 leading-relaxed italic">"${post.caption}"</p>
               </div>
+
+              <!-- Reactions Bar -->
+              <div class="pt-3 border-t border-brand-border">
+                <span class="text-[10px] uppercase font-bold text-neutral-400 block mb-2">Reactions</span>
+                <div class="flex flex-wrap gap-1.5">
+                  ${DEFAULT_REACTIONS.map(emoji => `
+                    <button onclick="addReaction('${post.id}', '${emoji}')" class="bg-neutral-900 hover:bg-neutral-800 border border-brand-border hover:border-neutral-600 px-2.5 py-1 rounded-full text-xs flex items-center gap-1.5 transition">
+                      <span>${emoji}</span>
+                      <span class="text-[10px] font-mono text-neutral-300">${reactions[emoji] || 0}</span>
+                    </button>
+                  `).join('')}
+                </div>
+              </div>
+
+              <!-- Comments Section -->
+              <div class="pt-3 border-t border-brand-border">
+                <span class="text-[10px] uppercase font-bold text-neutral-400 block mb-2">
+                  Banter & Comments (${comments.length})
+                </span>
+                
+                <!-- Comments list -->
+                <div class="max-h-32 overflow-y-auto space-y-2 pr-1 mb-3 scrollbar-thin">
+                  ${comments.length === 0 ? `
+                    <p class="text-[11px] text-neutral-500 italic">No comments yet. Be the first!</p>
+                  ` : comments.map(c => `
+                    <div class="bg-neutral-900/70 border border-brand-border/60 rounded p-2 text-xs">
+                      <div class="flex items-center justify-between text-[10px] text-neutral-400 mb-0.5">
+                        <span class="font-bold text-sky-400">${c.author}</span>
+                        <span class="font-mono text-neutral-500">${c.time || ''}</span>
+                      </div>
+                      <p class="text-neutral-200 text-[11px] leading-snug">${c.text}</p>
+                    </div>
+                  `).join('')}
+                </div>
+
+                <!-- Add comment form -->
+                <div class="flex gap-2">
+                  <input type="text" id="comment-input-${post.id}" placeholder="Leave a cheer..." onkeydown="if(event.key === 'Enter') addComment('${post.id}')" class="flex-grow bg-neutral-900 border border-brand-border rounded px-2.5 py-1.5 text-xs text-white placeholder-neutral-500 focus:outline-none focus:border-sky-500" />
+                  <button onclick="addComment('${post.id}')" class="bg-sky-600 hover:bg-sky-500 text-white text-xs font-semibold px-3 py-1.5 rounded transition">
+                    Post
+                  </button>
+                </div>
+              </div>
+
+              <!-- Footer with Upvote -->
               <div class="border-t border-brand-border pt-4 flex items-center justify-between">
-                <span class="text-xs font-mono text-neutral-400">${post.votes} Votes</span>
-                <button onclick="votePost('${post.id}')" class="bg-neutral-800 hover:bg-neutral-700 text-white text-xs font-semibold px-3 py-1.5 rounded transition">Upvote</button>
+                <span class="text-xs font-mono text-neutral-400">${post.votes || 0} Official Votes</span>
+                <button onclick="votePost('${post.id}')" class="bg-neutral-800 hover:bg-neutral-700 text-white text-xs font-semibold px-3 py-1.5 rounded transition shadow">
+                  ▲ Upvote
+                </button>
               </div>
             </div>
           </div>
