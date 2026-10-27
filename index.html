@@ -12,7 +12,8 @@
           colors: {
             brand: {
               charcoal: '#1A1A1A', dark: '#111111', card: '#1F1F1F',
-              border: '#2E2E2E', accent: '#333333', muted: '#888888', light: '#F5F5F7'
+              border: '#2E2E2E', accent: '#333333', muted: '#888888', light: '#F5F5F7',
+              lime: '#8cc63f' /* Exact green from the reference */
             }
           }
         }
@@ -156,6 +157,32 @@
         <p class="mt-2 text-neutral-400 text-sm">Official divisions and criteria. Hover your mouse over any rule or award category to view the official guidelines.</p>
       </div>
 
+      <!-- TIMELINE SECTION -->
+      <div class="group cursor-pointer">
+        <h3 class="text-xs font-bold text-neutral-400 uppercase tracking-wider mb-3">Campaign Timeline</h3>
+        <div class="relative flex items-center justify-between bg-brand-card border border-brand-border p-5 rounded-xl transition-all duration-300 group-hover:border-brand-lime shadow-md">
+          <div class="absolute left-[15%] right-[15%] top-1/2 h-0.5 bg-neutral-700 transition duration-300 group-hover:bg-brand-lime -z-0"></div>
+          
+          <!-- Start Date -->
+          <div class="relative z-10 flex flex-col items-center bg-brand-card px-4">
+            <div class="w-10 h-10 rounded-full bg-brand-dark border-2 border-neutral-600 flex items-center justify-center transition-colors duration-300 group-hover:border-brand-lime group-hover:bg-brand-lime/10">
+              <svg class="w-5 h-5 text-neutral-400 transition-colors duration-300 group-hover:text-brand-lime" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" /></svg>
+            </div>
+            <span class="mt-3 text-sm font-bold text-white transition-colors duration-300 group-hover:text-brand-lime">1 November</span>
+            <span class="text-xs text-neutral-400 mt-1">Clean Shave Baseline</span>
+          </div>
+
+          <!-- End Date -->
+          <div class="relative z-10 flex flex-col items-center bg-brand-card px-4">
+            <div class="w-10 h-10 rounded-full bg-brand-dark border-2 border-neutral-600 flex items-center justify-center transition-colors duration-300 group-hover:border-brand-lime group-hover:bg-brand-lime/10">
+              <svg class="w-5 h-5 text-neutral-400 transition-colors duration-300 group-hover:text-brand-lime" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" /></svg>
+            </div>
+            <span class="mt-3 text-sm font-bold text-white transition-colors duration-300 group-hover:text-brand-lime">30 November</span>
+            <span class="text-xs text-neutral-400 mt-1">Last Voting Day COB</span>
+          </div>
+        </div>
+      </div>
+
       <!-- RULES 1-3 WITH HOVER HIGHLIGHT & WITTY POPUP -->
       <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
         <!-- Rule 1 -->
@@ -172,7 +199,7 @@
             <span class="inline-block bg-sky-800 text-sky-200 text-[10px] font-mono font-bold px-2 py-0.5 rounded uppercase tracking-wider mb-1.5">Unfiltered Rule #1</span>
             <h4 class="text-sm font-extrabold text-white mb-1">The Babyface Protocol</h4>
             <p class="text-[11px] text-sky-100 leading-relaxed">
-              No sneaky 3-day head starts allowed! On November 1st, your face must be as bare as a fresh sheet of paper. We need photographic evidence that you started from ground zero. Bid a temporary farewell to your emotional support stubble—it’s time to face the breeze.
+              No sneaky 3-day head starts allowed! On November 1st, your face must be as bare as a fresh sheet of paper. We need photographic evidence that you started from ground zero. Bid a temporary farewell to your emotional support stubble.
             </p>
           </div>
         </div>
@@ -191,7 +218,7 @@
             <span class="inline-block bg-sky-800 text-sky-200 text-[10px] font-mono font-bold px-2 py-0.5 rounded uppercase tracking-wider mb-1.5">Unfiltered Rule #2</span>
             <h4 class="text-sm font-extrabold text-white mb-1">Lip Island Only</h4>
             <p class="text-[11px] text-sky-100 leading-relaxed">
-              This is a strictly solo expedition for your upper lip. That means no defensive goatees, no chinstraps, and no masquerading a five o'clock shadow as "texture." If the whiskers aren't confined strictly to the space between your nose and lip, you will be disqualified by popular outrage.
+              This is a strictly solo expedition for your upper lip. That means no defensive goatees, no chinstraps, and no masquerading a five o'clock shadow as "texture." If the whiskers aren't confined strictly to the upper lip, you will be disqualified.
             </p>
           </div>
         </div>
@@ -208,9 +235,9 @@
           <!-- Witty Pop-up -->
           <div class="rule-popup absolute left-0 right-0 -top-3 -translate-y-full bg-sky-600 border border-sky-400 rounded-xl p-4 shadow-2xl z-30 text-white">
             <span class="inline-block bg-sky-800 text-sky-200 text-[10px] font-mono font-bold px-2 py-0.5 rounded uppercase tracking-wider mb-1.5">Unfiltered Rule #3</span>
-            <h4 class="text-sm font-extrabold text-white mb-1">Democracy, Banter & Bribery</h4>
+            <h4 class="text-sm font-extrabold text-white mb-1">Democracy & Banter</h4>
             <p class="text-[11px] text-sky-100 leading-relaxed">
-              Forget scientific calipers—this is an office popularity contest where pure charisma beats genetics every time. Flaunt your lip foliage on every Teams call, lobby ruthlessly in the kitchen, and remember: subtly trading barista coffee for final votes is practically an office tradition.
+              Forget scientific calipers—this is an office popularity contest where pure charisma beats genetics. Flaunt your lip foliage on every Teams call, lobby ruthlessly in the kitchen, and bring your best energy.
             </p>
           </div>
         </div>
@@ -222,7 +249,7 @@
         <p class="text-xs text-neutral-400 mb-6">Hover over any division below to view the official category badge and details.</p>
         
         <div class="space-y-4">
-          <!-- Award 1: The Ron Swanson -->
+          <!-- Award 1 -->
           <div class="award-card group relative bg-brand-card border border-brand-border p-5 rounded-lg transition duration-200 hover:border-sky-500 cursor-pointer">
             <div class="flex items-center justify-between">
               <div>
@@ -230,27 +257,20 @@
                 <h3 class="text-base font-bold text-white mt-0.5">The Ron Swanson</h3>
                 <p class="text-xs text-neutral-400 mt-1">Thickest, fullest, and most unapologetically dominant pushbroom growth.</p>
               </div>
-              <span class="text-xs text-sky-400 font-semibold flex items-center gap-1 group-hover:translate-x-1 transition">
-                Preview &rarr;
-              </span>
+              <span class="text-xs text-sky-400 font-semibold flex items-center gap-1 group-hover:translate-x-1 transition">Preview &rarr;</span>
             </div>
-
-            <!-- Pop-up Smollan Blue Banner -->
+            <!-- Pop-up -->
             <div class="award-banner-popup absolute left-0 right-0 -top-4 -translate-y-full bg-sky-600 border border-sky-400 rounded-xl p-4 shadow-2xl z-40 text-white flex items-center gap-4">
               <img src="ron.jpg" alt="The Ron Swanson" class="w-24 h-24 object-cover rounded-lg border-2 border-white/30 shadow-md flex-shrink-0 bg-neutral-900" onerror="this.onerror=null; this.src='https://placehold.co/96x96/0284c7/ffffff?text=RON';" />
               <div class="flex-grow">
-                <span class="inline-block bg-sky-800 text-sky-200 text-[10px] font-mono font-bold px-2 py-0.5 rounded uppercase tracking-wider mb-1">
-                  Division A Showcase
-                </span>
+                <span class="inline-block bg-sky-800 text-sky-200 text-[10px] font-mono font-bold px-2 py-0.5 rounded uppercase tracking-wider mb-1">Division A Showcase</span>
                 <h4 class="text-base font-extrabold text-white">The Ron Swanson</h4>
-                <p class="text-xs text-sky-100 mt-1 leading-relaxed">
-                  Celebrates pure density and natural pushbroom volume. No trims below the lip line, no sculpted pencil lines—just dominant facial foliage.
-                </p>
+                <p class="text-xs text-sky-100 mt-1 leading-relaxed">Celebrates pure density and natural pushbroom volume. No trims below the lip line, no sculpted pencil lines—just dominant facial foliage.</p>
               </div>
             </div>
           </div>
 
-          <!-- Award 2: The Dapper Gentleman -->
+          <!-- Award 2 -->
           <div class="award-card group relative bg-brand-card border border-brand-border p-5 rounded-lg transition duration-200 hover:border-sky-500 cursor-pointer">
             <div class="flex items-center justify-between">
               <div>
@@ -258,27 +278,20 @@
                 <h3 class="text-base font-bold text-white mt-0.5">The Dapper Gentleman</h3>
                 <p class="text-xs text-neutral-400 mt-1">For precision styling, waxed handlebars, sharp symmetry, and immaculate grooming.</p>
               </div>
-              <span class="text-xs text-sky-400 font-semibold flex items-center gap-1 group-hover:translate-x-1 transition">
-                Preview &rarr;
-              </span>
+              <span class="text-xs text-sky-400 font-semibold flex items-center gap-1 group-hover:translate-x-1 transition">Preview &rarr;</span>
             </div>
-
-            <!-- Pop-up Smollan Blue Banner -->
+            <!-- Pop-up -->
             <div class="award-banner-popup absolute left-0 right-0 -top-4 -translate-y-full bg-sky-600 border border-sky-400 rounded-xl p-4 shadow-2xl z-40 text-white flex items-center gap-4">
               <img src="dapper.jpg" alt="The Dapper Gentleman" class="w-24 h-24 object-cover rounded-lg border-2 border-white/30 shadow-md flex-shrink-0 bg-neutral-900" onerror="this.onerror=null; this.src='https://placehold.co/96x96/0284c7/ffffff?text=DAPPER';" />
               <div class="flex-grow">
-                <span class="inline-block bg-sky-800 text-sky-200 text-[10px] font-mono font-bold px-2 py-0.5 rounded uppercase tracking-wider mb-1">
-                  Division B Showcase
-                </span>
+                <span class="inline-block bg-sky-800 text-sky-200 text-[10px] font-mono font-bold px-2 py-0.5 rounded uppercase tracking-wider mb-1">Division B Showcase</span>
                 <h4 class="text-base font-extrabold text-white">The Dapper Gentleman</h4>
-                <p class="text-xs text-sky-100 mt-1 leading-relaxed">
-                  Surgical symmetry, fine comb work, and bespoke wax tips. Awarded to the Mo-Bro who treats moustache maintenance like fine engineering.
-                </p>
+                <p class="text-xs text-sky-100 mt-1 leading-relaxed">Surgical symmetry, fine comb work, and bespoke wax tips. Awarded to the Mo-Bro who treats moustache maintenance like fine engineering.</p>
               </div>
             </div>
           </div>
 
-          <!-- Award 3: The Wispy Hopeful -->
+          <!-- Award 3 -->
           <div class="award-card group relative bg-brand-card border border-brand-border p-5 rounded-lg transition duration-200 hover:border-sky-500 cursor-pointer">
             <div class="flex items-center justify-between">
               <div>
@@ -286,27 +299,20 @@
                 <h3 class="text-base font-bold text-white mt-0.5">The Wispy Hopeful</h3>
                 <p class="text-xs text-neutral-400 mt-1">Celebrating unyielding courage, supreme patience, and sheer effort against thin genetics.</p>
               </div>
-              <span class="text-xs text-sky-400 font-semibold flex items-center gap-1 group-hover:translate-x-1 transition">
-                Preview &rarr;
-              </span>
+              <span class="text-xs text-sky-400 font-semibold flex items-center gap-1 group-hover:translate-x-1 transition">Preview &rarr;</span>
             </div>
-
-            <!-- Pop-up Smollan Blue Banner -->
+            <!-- Pop-up -->
             <div class="award-banner-popup absolute left-0 right-0 -top-4 -translate-y-full bg-sky-600 border border-sky-400 rounded-xl p-4 shadow-2xl z-40 text-white flex items-center gap-4">
               <img src="wispy.jpg" alt="The Wispy Hopeful" class="w-24 h-24 object-cover rounded-lg border-2 border-white/30 shadow-md flex-shrink-0 bg-neutral-900" onerror="this.onerror=null; this.src='https://placehold.co/96x96/0284c7/ffffff?text=WISPY';" />
               <div class="flex-grow">
-                <span class="inline-block bg-sky-800 text-sky-200 text-[10px] font-mono font-bold px-2 py-0.5 rounded uppercase tracking-wider mb-1">
-                  Division C Showcase
-                </span>
+                <span class="inline-block bg-sky-800 text-sky-200 text-[10px] font-mono font-bold px-2 py-0.5 rounded uppercase tracking-wider mb-1">Division C Showcase</span>
                 <h4 class="text-base font-extrabold text-white">The Wispy Hopeful</h4>
-                <p class="text-xs text-sky-100 mt-1 leading-relaxed">
-                  Honoring relentless determination and stubborn pride in the face of patchy follicle resistance. A true tribute to Movember camaraderie.
-                </p>
+                <p class="text-xs text-sky-100 mt-1 leading-relaxed">Honoring relentless determination and stubborn pride in the face of patchy follicle resistance. A true tribute to Movember camaraderie.</p>
               </div>
             </div>
           </div>
 
-          <!-- Award 4: The People's Choice -->
+          <!-- Award 4 -->
           <div class="award-card group relative bg-brand-card border border-brand-border p-5 rounded-lg transition duration-200 hover:border-sky-500 cursor-pointer">
             <div class="flex items-center justify-between">
               <div>
@@ -314,22 +320,15 @@
                 <h3 class="text-base font-bold text-white mt-0.5">The People's Choice</h3>
                 <p class="text-xs text-neutral-400 mt-1">Decided entirely by office popular vote based on attitude, charisma, and campaign spirit.</p>
               </div>
-              <span class="text-xs text-sky-400 font-semibold flex items-center gap-1 group-hover:translate-x-1 transition">
-                Preview &rarr;
-              </span>
+              <span class="text-xs text-sky-400 font-semibold flex items-center gap-1 group-hover:translate-x-1 transition">Preview &rarr;</span>
             </div>
-
-            <!-- Pop-up Smollan Blue Banner -->
+            <!-- Pop-up -->
             <div class="award-banner-popup absolute left-0 right-0 -top-4 -translate-y-full bg-sky-600 border border-sky-400 rounded-xl p-4 shadow-2xl z-40 text-white flex items-center gap-4">
               <img src="choice.jpg" alt="People's Choice" class="w-24 h-24 object-cover rounded-lg border-2 border-white/30 shadow-md flex-shrink-0 bg-neutral-900" onerror="this.onerror=null; this.src='https://placehold.co/96x96/0284c7/ffffff?text=CHOICE';" />
               <div class="flex-grow">
-                <span class="inline-block bg-sky-800 text-sky-200 text-[10px] font-mono font-bold px-2 py-0.5 rounded uppercase tracking-wider mb-1">
-                  Division D Showcase
-                </span>
+                <span class="inline-block bg-sky-800 text-sky-200 text-[10px] font-mono font-bold px-2 py-0.5 rounded uppercase tracking-wider mb-1">Division D Showcase</span>
                 <h4 class="text-base font-extrabold text-white">The People's Choice</h4>
-                <p class="text-xs text-sky-100 mt-1 leading-relaxed">
-                  Voted entirely by Smollan Tech colleagues. Awarded to the participant who brings the highest energy, banter, and engagement throughout November.
-                </p>
+                <p class="text-xs text-sky-100 mt-1 leading-relaxed">Voted entirely by Smollan Tech colleagues. Awarded to the participant who brings the highest energy, banter, and engagement throughout November.</p>
               </div>
             </div>
           </div>
@@ -339,10 +338,15 @@
 
     <!-- TAB 3: GALLERY -->
     <section id="view-gallery" class="hidden space-y-8">
-      <div class="border-b border-brand-border pb-6 flex items-center justify-between">
+      <div class="border-b border-brand-border pb-6 flex flex-col md:flex-row md:items-end justify-between gap-4">
         <div>
           <h1 class="text-3xl font-extrabold tracking-tight text-white">Mo-Bros Progress Feed</h1>
-          <p class="text-xs text-neutral-400 mt-1">Upvote, add emoji reactions, and leave comments to cheer on your colleagues!</p>
+          <p class="text-xs text-neutral-400 mt-1">Select an Award Category to cast your vote (1 per Mo-Bro). Add unlimited emojis and comments!</p>
+        </div>
+        <!-- Voting Deadline Indicator -->
+        <div class="inline-flex items-center gap-2 bg-neutral-900 border border-neutral-700 rounded-lg px-3 py-2 text-xs shadow-md">
+          <span class="w-2.5 h-2.5 rounded-full bg-brand-lime animate-pulse"></span>
+          <span class="text-neutral-300">All Upvoting closes <strong class="text-white">Nov 30th, COB</strong></span>
         </div>
       </div>
       <div id="gallery-container" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6"></div>
@@ -395,6 +399,18 @@
     </section>
   </main>
 
+  <!-- TERMS & CONDITIONS FOOTER -->
+  <footer class="bg-brand-charcoal border-t border-brand-border mt-auto py-8">
+    <div class="max-w-6xl mx-auto px-4">
+      <h4 class="text-xs font-bold text-neutral-400 uppercase tracking-wider mb-3">Initiative Disclaimer & T's & C's</h4>
+      <p class="text-[11px] text-neutral-500 leading-relaxed max-w-4xl">
+        This internal Mo-Grow contest is an independent workplace initiative designed to foster team connection and raise awareness for men's physical and mental health. <strong>It is not run in official collaboration with the formal Movember brand or global campaign.</strong> Should anyone wish to financially contribute to the initiative, you are highly encouraged to do so of your own accord directly via the <a href="https://za.movember.com/" target="_blank" rel="noopener noreferrer" class="text-brand-lime hover:underline font-semibold">official Movember website (za.movember.com)</a>. 
+        <br><br>
+        <em>Privacy & Consent: By taking part, registering an account, and creating your profile, you explicitly consent to your uploaded photos and captions being hosted on this web portal to be viewed and voted on by the business.</em>
+      </p>
+    </div>
+  </footer>
+
   <!-- Hidden file picker for replacing images -->
   <input type="file" id="replace-image-input" accept="image/*" class="hidden" onchange="handleImageReplacement(event)" />
 
@@ -425,6 +441,13 @@
       'bro15@smollan.tech': 'MoGrow2026_15!'
     };
 
+    const AWARD_CATEGORIES = [
+      'The Ron Swanson',
+      'The Dapper Gentleman',
+      'The Wispy Hopeful',
+      "The People's Choice"
+    ];
+
     const DEFAULT_REACTIONS = ['🔥', '🧔', '👏', '💪', '😂'];
 
     let feedPosts = JSON.parse(localStorage.getItem('smollan_movember_posts') || '[]');
@@ -434,6 +457,14 @@
 
     function savePostsToStorage() {
       localStorage.setItem('smollan_movember_posts', JSON.stringify(feedPosts));
+    }
+
+    function getStoredVotes() {
+      try {
+        return JSON.parse(localStorage.getItem('smollan_user_votes') || '{}');
+      } catch (e) {
+        return {};
+      }
     }
 
     function showToast(msg) {
@@ -566,7 +597,7 @@
           week: week, 
           caption: caption || 'Steady growth.', 
           image: compressedBase64, 
-          votes: 0,
+          votes: {}, // New object format for category votes
           reactions: { '🔥': 0, '🧔': 0, '👏': 0, '💪': 0, '😂': 0 },
           comments: []
         });
@@ -613,13 +644,35 @@
       showToast('Photo removed.');
     }
 
-    function votePost(postId) {
+    // New Category Voting System
+    function castCategoryVote(postId) {
+      const select = document.getElementById(`vote-select-${postId}`);
+      const category = select ? select.value : '';
+
+      if (!category) {
+        showToast('Please select a category from the dropdown first!');
+        return;
+      }
+
+      const storedVotes = getStoredVotes();
+      if (storedVotes[postId]) {
+        showToast(`You have already voted for this Mo-Bro!`);
+        return;
+      }
+
       const post = feedPosts.find(p => p.id === postId);
-      if (post) { 
-        post.votes = (post.votes || 0) + 1; 
+      if (post) {
+        // Data migration safeguard for old number-based votes
+        if (typeof post.votes === 'number') post.votes = {};
+        if (!post.votes) post.votes = {};
+
+        post.votes[category] = (post.votes[category] || 0) + 1;
+        storedVotes[postId] = category;
+        localStorage.setItem('smollan_user_votes', JSON.stringify(storedVotes));
+        
         savePostsToStorage();
-        renderGallery(); 
-        showToast('Upvote recorded!'); 
+        renderGallery();
+        showToast(`Vote counted for ${category}!`);
       }
     }
 
@@ -678,20 +731,43 @@
         return;
       }
 
+      const userVotes = getStoredVotes();
+
       container.innerHTML = feedPosts.map(post => {
         const isOwner = currentUser && (post.author === currentUser);
         const reactions = post.reactions || { '🔥': 0, '🧔': 0, '👏': 0, '💪': 0, '😂': 0 };
         const comments = post.comments || [];
+        const userVotedCategory = userVotes[post.id];
+
+        // Ensure post.votes is an object
+        let postVotes = post.votes;
+        if (typeof postVotes === 'number') postVotes = {};
+        if (!postVotes) postVotes = {};
+
+        const totalVotes = Object.values(postVotes).reduce((a, b) => a + b, 0);
+
+        // Generate Category Badges
+        const voteBadges = Object.entries(postVotes)
+          .filter(([_, count]) => count > 0)
+          .map(([cat, count]) => `
+            <span class="inline-flex items-center gap-1 bg-neutral-900 border border-neutral-700 text-neutral-300 text-[10px] px-2 py-0.5 rounded">
+              <span class="text-brand-lime font-bold">${count}</span> ${cat}
+            </span>
+          `).join('') || '<span class="text-[10px] text-neutral-500 italic block mt-1">No category votes yet</span>';
 
         return `
-          <div class="bg-brand-card border border-brand-border rounded-xl overflow-hidden flex flex-col shadow-lg">
+          <div class="bg-brand-card border border-brand-border rounded-xl overflow-hidden flex flex-col shadow-lg transition-all duration-300 hover:border-neutral-500">
+            <!-- Image Area -->
             <div class="h-64 bg-neutral-950 overflow-hidden relative">
               <img src="${post.image}" alt="${post.name}" class="w-full h-full object-cover" />
               <div class="absolute top-3 left-3 bg-neutral-900/90 backdrop-blur px-2.5 py-1 rounded text-[11px] font-mono text-neutral-300 border border-neutral-700">
                 ${post.week}
               </div>
+              <div class="absolute top-3 right-3 bg-neutral-900/90 backdrop-blur px-2 py-0.5 rounded text-[10px] font-bold text-brand-lime border border-neutral-700">
+                ${totalVotes} Total Votes
+              </div>
               ${isOwner ? `
-                <div class="absolute top-3 right-3 flex gap-1.5">
+                <div class="absolute bottom-3 right-3 flex gap-1.5">
                   <button onclick="triggerReplaceImage('${post.id}')" title="Change Photo" class="bg-neutral-900/90 hover:bg-neutral-800 text-neutral-200 border border-neutral-700 text-[10px] font-semibold px-2 py-1 rounded shadow backdrop-blur transition">
                     Change Photo
                   </button>
@@ -702,6 +778,7 @@
               ` : ''}
             </div>
 
+            <!-- Content Area -->
             <div class="p-5 flex-grow flex flex-col justify-between space-y-4">
               <div>
                 <div class="flex items-center justify-between">
@@ -710,6 +787,14 @@
                 </div>
                 <p class="text-xs text-neutral-400">${post.role}</p>
                 <p class="text-xs text-neutral-300 mt-2 leading-relaxed italic">"${post.caption}"</p>
+                
+                <!-- Vote Breakdown -->
+                <div class="mt-3 pt-3 border-t border-brand-border">
+                  <span class="block text-[10px] font-bold uppercase tracking-wider text-neutral-500 mb-1.5">Current Standing</span>
+                  <div class="flex flex-wrap gap-1.5">
+                    ${voteBadges}
+                  </div>
+                </div>
               </div>
 
               <!-- Reactions Bar -->
@@ -746,20 +831,33 @@
                 </div>
 
                 <div class="flex gap-2">
-                  <input type="text" id="comment-input-${post.id}" placeholder="Leave a cheer..." onkeydown="if(event.key === 'Enter') addComment('${post.id}')" class="flex-grow bg-neutral-900 border border-brand-border rounded px-2.5 py-1.5 text-xs text-white placeholder-neutral-500 focus:outline-none focus:border-sky-500" />
-                  <button onclick="addComment('${post.id}')" class="bg-sky-600 hover:bg-sky-500 text-white text-xs font-semibold px-3 py-1.5 rounded transition">
+                  <input type="text" id="comment-input-${post.id}" placeholder="Leave a cheer..." onkeydown="if(event.key === 'Enter') addComment('${post.id}')" class="flex-grow bg-neutral-900 border border-brand-border rounded px-2.5 py-1.5 text-xs text-white placeholder-neutral-500 focus:outline-none focus:border-brand-lime" />
+                  <button onclick="addComment('${post.id}')" class="bg-neutral-800 hover:bg-neutral-700 border border-neutral-600 text-white text-xs font-semibold px-3 py-1.5 rounded transition">
                     Post
                   </button>
                 </div>
               </div>
 
-              <!-- Upvote Action -->
-              <div class="border-t border-brand-border pt-4 flex items-center justify-between">
-                <span class="text-xs font-mono text-neutral-400">${post.votes || 0} Official Votes</span>
-                <button onclick="votePost('${post.id}')" class="bg-neutral-800 hover:bg-neutral-700 text-white text-xs font-semibold px-3 py-1.5 rounded transition shadow">
-                  ▲ Upvote
-                </button>
+              <!-- Category Voting Action -->
+              <div class="pt-3 border-t border-brand-border space-y-2">
+                ${userVotedCategory ? `
+                  <div class="w-full bg-brand-lime/10 border border-brand-lime text-brand-lime text-xs font-semibold px-3 py-2 rounded flex items-center justify-center gap-1.5">
+                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" /></svg>
+                    You voted for ${userVotedCategory}
+                  </div>
+                ` : `
+                  <div class="flex items-center gap-2">
+                    <select id="vote-select-${post.id}" class="bg-neutral-900 border border-neutral-700 text-neutral-200 text-[11px] font-semibold rounded px-2 py-2 flex-grow focus:outline-none focus:border-brand-lime">
+                      <option value="">Select Category to Vote...</option>
+                      ${AWARD_CATEGORIES.map(c => `<option value="${c}">${c}</option>`).join('')}
+                    </select>
+                    <button onclick="castCategoryVote('${post.id}')" class="bg-brand-lime hover:bg-opacity-80 text-brand-dark text-xs font-bold px-4 py-2 rounded transition shadow">
+                      Vote
+                    </button>
+                  </div>
+                `}
               </div>
+
             </div>
           </div>
         `;
@@ -787,7 +885,7 @@
             <h4 class="text-xs font-bold text-white truncate">${post.week}</h4>
             <p class="text-[11px] text-neutral-400 truncate mt-0.5">"${post.caption}"</p>
             <div class="flex gap-2 mt-2">
-              <button onclick="triggerReplaceImage('${post.id}')" class="text-[11px] font-semibold text-sky-400 hover:text-sky-300 transition">
+              <button onclick="triggerReplaceImage('${post.id}')" class="text-[11px] font-semibold text-brand-lime hover:text-opacity-80 transition">
                 Replace Photo
               </button>
               <span class="text-neutral-600 text-[11px]">|</span>
